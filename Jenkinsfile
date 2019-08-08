@@ -10,6 +10,6 @@ node ('master')
     }
     stage ('deploy')
     {
-        sh label: '', script: 'scp /var/lib/jenkins/workspace/simple/webapp/target/webapp.war ubuntu@172.31.87.102:/var/lib/tomcat8/webapps/ravi.war'
+        sh label: '', script: 'scp /var/lib/jenkins/workspace/rushi/webapp/target/webapp.war ubuntu@172.31.87.102:/var/lib/tomcat8/webapps/ravi.war'
     }
 }
